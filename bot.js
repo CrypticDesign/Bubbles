@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "b!";
 
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('I am ready mate!');
 });
 
 client.on('message', message => {
