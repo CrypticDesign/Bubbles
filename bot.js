@@ -1,25 +1,18 @@
 const Discord = require('discord.js');
+const client = new Discord.Client();
 
-var client = new discord.Client();
-
-const token = "NDQ2NTA5NDQ0MDc2MDExNTIw.Dd_stw.5eNsxErZsIiq4Z8O8-I3CXQsIWk";
-
-client.on ("ready", () => {
-    console.log ("Ready!");
-    
-    client.user.setGame ("with Codes!");
+client.on('ready', () => {
+    console.log('I am ready!');
 });
 
-const prefix = "b!"
-client.on ("message", (message) => {
+client.on('message', message => {
     
     if (message.author.bot) return;
     
-    if (message.content.startsWith (prefix + "ping")) {
-        message.reply ("Pong!");
-        
-    }
-    
+    if (message.content.startsWith (process.env.PREFIX + 'ping')) {
+    	message.channel.Send('pong');
+  	}
 });
 
-client.login (token);
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
