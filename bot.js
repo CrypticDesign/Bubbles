@@ -5,7 +5,6 @@ const prefix = "b.";
 client.on('ready', () => {
     console.log('I am ready!');
     
-    client.user.setGame ("with Coding");
 });
 
 client.on('message', message => {
@@ -15,6 +14,12 @@ client.on('message', message => {
     if (message.content.startsWith (prefix + 'ping')) {
     	message.channel.send('pong');
   	}
+});
+
+bot.user.setPresence( {
+    status: 'online', game: { 
+        name: 'Cool' 
+    } 
 });
 
 // THIS  MUST  BE  THIS  WAY
