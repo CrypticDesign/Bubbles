@@ -4,8 +4,6 @@ const prefix = "b!";
 
 client.on('ready', () => {
     console.log('I am ready!');
-    
-    client.user.setActivity ("with Bubbles! | b!help")
 });
 
 client.on('message', message => {
