@@ -5,7 +5,6 @@ const prefix = "b!";
 client.on('ready', () => {
     console.log('I am ready mate!');
     
-    client.user.setActivity ("b!help");
 });
 
 client.on('message', message => {
