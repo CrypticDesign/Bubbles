@@ -1,6 +1,9 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
 const prefix = "b!";
+const discord = require ('discord.js');
+
+var client = new discord.Client(); 
+
+const token = "NDQ2NTA5NDQ0MDc2MDExNTIw.DeHQvw.xFWs_K6vgnD-gsZKns3Nv0z2lsQ";
 
 client.on('ready', () => {
     console.log('I am ready mate!');
@@ -29,4 +32,4 @@ client.on('message', message => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login (token);
