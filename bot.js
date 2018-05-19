@@ -8,7 +8,6 @@ const token = "NDQ2NTA5NDQ0MDc2MDExNTIw.DeHQvw.xFWs_K6vgnD-gsZKns3Nv0z2lsQ";
 client.on('ready', () => {
     console.log('I am ready mate!');
     
-    client.user.setActivity ("with Bubbles! | b!help");
 });
 
 client.on('message', message => {
